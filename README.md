@@ -5,6 +5,10 @@ Each section below maps directly to the assignment questions. The written respon
 
 ---
 
+**Jump to:** [Question 1](#question-1--booking-flow-test-cases) · [Question 2](#question-2--privacy-and-security) · [Automation](#automation--playwright-test-suite)
+
+---
+
 # Question 1 | Booking Flow Test Cases
 
 > What are the 15 most important test cases across the booking flow, and why do the top 3 rank highest?
@@ -219,3 +223,5 @@ make clean
 - Set up automatic test runs on every code push and once a night.
 
 ---
+
+**Jump to:** [Question 1](#question-1--booking-flow-test-cases) · [Question 2](#question-2--privacy-and-security) · [Automation](#automation--playwright-test-suite)
