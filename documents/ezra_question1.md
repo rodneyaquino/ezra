@@ -417,3 +417,8 @@ This is in the top three because payment is the highest-trust moment in the flow
 This ranks third because double-charging a user is one of the most damaging outcomes a booking system can produce. Users on slow connections, impatient users, or users who receive no immediate UI feedback will click submit more than once. If the system does not prevent or safely absorb repeated submissions, the result is duplicate charges, duplicate booking records, and a support and refund burden that directly erodes user trust and operational efficiency. This is a financial integrity issue that must be guarded at the system level.
 
 ---
+<div align="center">
+
+[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Question 2 | Privacy and Security →](ezra_question2.md)
+
+</div>

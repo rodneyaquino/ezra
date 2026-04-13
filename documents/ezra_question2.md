@@ -451,3 +451,10 @@ That means:
 That gives Ezra a practical way to improve security quality across a large API surface without assuming every endpoint will get the same depth on day one.
 
 </details>
+
+----
+<div align="center">
+
+[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [← Question 1 | Booking Flow Test Cases](ezra_question1.md)
+
+</div>

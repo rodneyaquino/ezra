@@ -38,9 +38,9 @@ export type TestUser = {
  * Generate a unique test user for each test run.
  *
  * NAMING CONVENTION
- * - firstName : ezratest (fixed)
+ * - firstName : rahkiino (fixed)
  * - lastName  : user-MMDDYYYYHHMMSS  (datetime makes it unique per run)
- * - email     : ezratest+user-MMDDYYYYHHMMSS@gmail.com
+ * - email     : rahkiino+user-MMDDYYYYHHMMSS@gmail.com
  * - phone     : 1231231234
  * - password  : EzraTest1
  */
@@ -56,9 +56,9 @@ export function generateTestUser(): TestUser {
     pad(now.getSeconds());
 
   return {
-    firstName: 'ezratest',
+    firstName: 'rahkiino',
     lastName:  `user-${ts}`,
-    email:     `ezratest+user-${ts}@gmail.com`,
+    email:     `rahkiino+user-${ts}@gmail.com`,
     phone:     '1231231234',
     password:  'EzraTest1',
   };
