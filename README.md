@@ -5,7 +5,7 @@ Each section below maps directly to the assignment questions. The written respon
 
 ---
 
-**Jump to:** [Question 1](#question-1--booking-flow-test-cases) · [Question 2](#question-2--privacy-and-security) · [Automation](#automation--playwright-test-suite)
+**Jump to:** [Question 1](documents/ezra_question1.md) · [Question 2](documents/ezra_question2.md) · [Automation](#automation--playwright-test-suite)
 
 ---
 
@@ -224,4 +224,4 @@ make clean
 
 ---
 
-**Jump to:** [Question 1](#question-1--booking-flow-test-cases) · [Question 2](#question-2--privacy-and-security) · [Automation](#automation--playwright-test-suite)
+**Jump to:** [Question 1](documents/ezra_question1.md) · [Question 2](documents/ezra_question2.md) · [Automation](#automation--playwright-test-suite)
