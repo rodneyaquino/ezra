@@ -131,6 +131,8 @@ The `utils/` folder holds shared test data and URL matchers. Card numbers, offic
 
 ## Setup
 
+> Built and tested on macOS (Apple Silicon) with Node.js and Chromium via Playwright.
+
 **Steps**
 1. Install dependencies
 ```bash
