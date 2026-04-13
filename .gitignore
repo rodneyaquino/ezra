@@ -1,0 +1,41 @@
+# =============================================================================
+# Ezra Booking Automation | .gitignore
+# =============================================================================
+#
+# This file lists the folders and files that should stay out of source control.
+# Think of it like a "do not pack this in the suitcase" list.
+#
+# WHY THIS MATTERS
+# - node_modules is huge and can always be reinstalled
+# - Playwright reports are generated files, not source code
+# - .env files can contain secrets and should stay private
+# - OS and editor files create noise in the repo
+# =============================================================================
+
+# Dependencies installed by npm.
+node_modules/
+
+# Test output created by Playwright runs.
+test-results/
+playwright-report/
+blob-report/
+
+# Local environment files.
+# These may contain usernames, passwords, or environment-specific URLs.
+.env
+.env.local
+.env.*.local
+
+# Local editor or operating system noise.
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Playwright CLI state (machine-specific).
+.playwright/
+
+# Optional build output.
+dist/
+

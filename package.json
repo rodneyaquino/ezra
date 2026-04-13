@@ -1,0 +1,24 @@
+{
+  "name": "ezra-booking-tests",
+  "version": "1.2.0",
+  "description": "Playwright E2E test suite for Ezra booking flow coverage.",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:main": "npx playwright test tests/e2e-booking.spec.ts tests/payment-decline.spec.ts",
+    "test:happy": "npx playwright test tests/e2e-booking.spec.ts",
+    "test:decline": "npx playwright test tests/payment-decline.spec.ts",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:list": "npx playwright test --list",
+    "typecheck": "node ./node_modules/typescript/bin/tsc --noEmit",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.0",
+    "@types/node": "^24.6.0",
+    "dotenv": "^17.2.3",
+    "typescript": "^5.9.3"
+  }
+}
