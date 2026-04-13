@@ -18,6 +18,26 @@ This response focuses on the first three steps of Ezra’s booking flow in the M
 
 > The 15 test cases below are ranked from highest to lowest priority based on booking risk, payment integrity, user trust, data accuracy, and the behaviors most likely to affect a successful booking outcome. Part 2 explains why the top three test cases were ranked highest.
 
+| # | Test Case | Description |
+|---|-----------|-------------|
+| 1 | [End-to-end successful booking request creation through payment](#1-end-to-end-successful-booking-request-creation-through-payment) | Full happy path from scan selection through payment to confirmation |
+| 2 | [Failed payment does not create a submitted booking state](#2-failed-payment-does-not-create-a-submitted-booking-state) | Declined card never results in a success state or submitted booking |
+| 3 | [Duplicate payment submission does not create duplicate charges or booking requests](#3-duplicate-payment-submission-does-not-create-duplicate-charges-or-duplicate-booking-requests) | Repeated submits during slow network do not double-charge or double-book |
+| 4 | [Booking details remain accurate across all steps](#4-booking-details-remain-accurate-across-scan-selection-scheduling-payment-and-post-payment-pages) | Scan, office, date, and time stay consistent from selection through confirmation |
+| 5 | [User is blocked when appointment count is below required threshold](#5-user-is-blocked-when-the-selected-appointment-count-is-below-the-required-threshold) | Flow does not advance until the required number of slots is selected |
+| 6 | [Under-18 DOB blocks qualification on Select Your Scan](#6-under-18-dob-blocks-qualification-on-select-your-scan) | Age gate enforced at the boundary. Exactly 18 is accepted, one day under is not |
+| 7 | [Back navigation and browser history do not corrupt flow state](#7-back-navigation-and-browser-history-do-not-corrupt-flow-state) | Browser back at any step does not orphan data or break subsequent progress |
+| 8 | [User can continue when required appointment count is fully satisfied](#8-user-can-continue-when-the-required-appointment-count-is-fully-satisfied) | Continue unlocks and flow advances once the slot requirement is met |
+| 9 | [Payment page renders correct options, summary, and total](#9-payment-page-renders-the-correct-payment-options-booking-summary-and-total) | Reserve your appointment loads with complete and accurate payment context |
+| 10 | [State filter returns the correct office list](#10-state-filter-returns-the-correct-office-list) | State dropdown filters offices to only those matching the selection |
+| 11 | [Find closest centers returns the correct office list](#11-find-closest-centers-to-me-returns-the-correct-office-list) | Location-based filter surfaces offices nearest to the user |
+| 12 | [Selected office loads the correct scheduling context](#12-selected-office-loads-the-correct-scheduling-context-and-office-specific-controls) | Choosing an office triggers the correct lower scheduling section |
+| 13 | [Calendar stays hidden until an office is selected](#13-calendar-and-datetime-selector-stay-hidden-until-an-office-is-selected) | Scheduling controls do not appear before office selection |
+| 14 | [Add-on restriction messaging and tooltips display correctly](#14-add-on-restriction-messaging-and-info-icon-tooltips-display-the-correct-explanatory-content) | Tooltip and info-icon content is accurate and contextually correct |
+| 15 | [What's Included / What's Not Included open correct plan modals](#15-whats-included-and-whats-not-included-open-the-correct-plan-specific-modals) | Plan detail modals open and display content matching the selected plan |
+
+---
+
 ## 1. End-to-end successful booking request creation through payment
 
 **Description**
