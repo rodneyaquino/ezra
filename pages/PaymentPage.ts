@@ -84,8 +84,8 @@ export class PaymentPage extends BasePage {
     //       cvcFrame = page.frameLocator('[title*="security code" i]')
     //
     // HOW TO CONFIRM WHICH STRIPE API EZRA USES
-    // Open DevTools while on the Reserve Your Appointment page.
-    // Count the iframes that contain "stripe" in their src or name.
+    // Inspect the Reserve Your Appointment page and count the iframes
+    // that contain "stripe" in their src or name.
     // One iframe → Payment Element (single-iframe path, current code works).
     // Multiple iframes → Elements per-field (multi-iframe path, needs update).
     // -------------------------------------------------------------------------
@@ -144,7 +144,6 @@ export class PaymentPage extends BasePage {
    */
   private cardNumberCandidates(): Locator[] {
     return [
-      // Role-based locator confirmed working via live browser recording.
       this.stripeFrame.getByRole('textbox', { name: /card number/i }),
       this.stripeFrame.locator('[name="cardnumber"]'),
       this.stripeFrame.getByPlaceholder(/card number/i),

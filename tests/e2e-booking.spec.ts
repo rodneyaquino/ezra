@@ -134,8 +134,7 @@ test.describe('TC-1: Successful booking', () => {
 
       // In the current staging flow, the payment submit does not always
       // redirect automatically to /scan-confirm even when the booking request
-      // is accepted. The user's codegen recording showed the same behavior and
-      // navigated directly to the confirmation route after submit.
+      // is accepted. If the redirect does not happen, navigate directly.
       const reachedSuccessUrl = await expect
         .poll(() => isSuccessfulBookingUrl(paymentPage.page.url()), {
           timeout: 10_000,

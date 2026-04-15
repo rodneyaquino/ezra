@@ -14,7 +14,6 @@
  * - the scan names used by the suite
  * - the office used by the main path
  * - Stripe test cards for success and decline
- * - geolocation values for mock-location tests
  * =============================================================================
  */
 
@@ -71,9 +70,6 @@ export function generateTestUser(): TestUser {
  */
 export const SCAN = {
   MRI: 'MRI Scan',
-  MRI_WITH_SPINE: 'MRI Scan with Spine',
-  MRI_WITH_SKELETAL_AND_NEUROLOGICAL_ASSESSMENT:
-    'MRI Scan with Skeletal and Neurological Assessment',
 } as const;
 
 /**
@@ -81,17 +77,7 @@ export const SCAN = {
  */
 export const OFFICE = {
   /**
-   * AMRIC New York — the office recorded in the codegen happy path.
-   *
-   * The scheduling page shows AMRIC as a collapsible hub. Clicking AMRIC
-   * expands it, then clicking the recommended sub-entry selects the office.
-   * This flow uses a direct day+time booking (1 appointment slot total).
-   */
-  AMRIC_NEW_YORK: 'AMRIC',
-  AMRIC_APPT_COUNT: 1,
-
-  /**
-   * North Irvine California — used by the payment-decline test.
+   * North Irvine California — used by the suite.
    * Cannot confirm immediately; requires 3 suggested time-slot preferences.
    */
   NORTH_IRVINE: 'North Irvine',

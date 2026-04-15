@@ -7,7 +7,7 @@
  * Portal. It is the final proof that the booking request was accepted before
  * the test moves on to User Facing Portal verification.
  *
- * OBSERVED REAL DOM (from the live walkthrough)
+ * PAGE STRUCTURE
  * - URL: /sign-up/scan-confirm
  * - Heading: "Your requested time slots have been received."
  * - Body includes:
@@ -37,9 +37,9 @@ export class ConfirmationPage extends BasePage {
   /**
    * Create the locator lists used by this page object.
    *
-   * The heading candidates include the exact observed text from the live
-   * walkthrough ("requested time slots") as well as generic success patterns
-   * so the tests survive if the wording changes slightly.
+   * The heading candidates include the exact heading text ("requested time slots")
+   * as well as generic success patterns so the tests survive if the wording
+   * changes slightly.
    */
   constructor(page: Page) {
     super(page);

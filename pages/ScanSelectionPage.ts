@@ -130,13 +130,13 @@ export class ScanSelectionPage extends BasePage {
    * exact-match regex is required to avoid "MRI Scan" also hitting
    * "MRI Scan with Spine" or "MRI Scan with Skeletal...".
    *
-   * The codegen recorded: getByText('MRI Scan Available at $').click()
-   * That combined heading+price text is unique per card and is tried first.
+   * The combined heading+price text (e.g. "MRI Scan Available at $...") is
+   * unique per card and is tried first.
    */
   async selectScan(scanName: string): Promise<void> {
     await this.clickFirstVisible(
       [
-        // Combined heading+price text — exactly what the codegen recorded.
+        // Combined heading+price text — unique per scan card.
         this.page.getByText(new RegExp(`${scanName}\\s+Available`, 'i')),
         // Exact-match on the heading <p> so "MRI Scan" ≠ "MRI Scan with Spine".
         this.page.getByText(new RegExp(`^${scanName}$`, 'i')).locator('..'),

@@ -12,7 +12,7 @@
  *   6. Dismisses the "I understand" modal (for offices requiring 3 preferences)
  *   7. Clicks Continue to proceed to payment
  *
- * KEY OBSERVATIONS FROM LIVE WALKTHROUGH AND DOM INSPECTION
+ * PAGE STRUCTURE NOTES
  * - The state filter is a custom combobox (role="combobox"), not a native <select>.
  *   Default text is "All Available". Selecting "California" reveals North Irvine.
  * - The calendar only appears after an office is selected.
@@ -235,7 +235,7 @@ export class SchedulingPage extends BasePage {
   /**
    * Click the forward arrow on the calendar to advance to the next month.
    *
-   * REAL DOM STRUCTURE (confirmed via live DOM inspection)
+   * DOM STRUCTURE
    * The calendar header contains:
    *   - A `<button class="trigger-btn">April 2026</button>` showing the month
    *   - Two `<button class="header-btn">` elements containing `<svg>` arrows:
@@ -258,7 +258,7 @@ export class SchedulingPage extends BasePage {
     const currentMonth = await this.getCalendarMonthHeader();
     let clicked = false;
 
-    // Strategy 1 (confirmed from live DOM inspection):
+    // Strategy 1:
     // The forward arrow is a `<button class="header-btn">` that is NOT disabled.
     // Both arrow buttons share the same class; the back arrow is disabled when
     // the current month is the earliest allowed. The forward arrow is the last
@@ -317,7 +317,7 @@ export class SchedulingPage extends BasePage {
   /**
    * Find and click the first available calendar date, or use the auto-selected one.
    *
-   * STRATEGY (confirmed via live browser inspection)
+   * STRATEGY
    * The Ezra calendar auto-selects the first available date when an office
    * is chosen. Time slots for that date appear immediately below the calendar.
    * This method:
@@ -327,7 +327,7 @@ export class SchedulingPage extends BasePage {
    *      until time slots appear.
    *   4. If no dates work in the current month, navigates forward and repeats.
    *
-   * REAL DOM STRUCTURE (confirmed via live DOM inspection)
+   * DOM STRUCTURE
    * Calendar days are plain <button> elements with accessible names like
    * "M 4" (Monday 4th), "T 12" (Tuesday 12th), etc. The currently selected
    * date has a CSS class containing "active". Unavailable dates lack

@@ -41,8 +41,7 @@ export class SignupPage extends BasePage {
 
     this.termsCandidates = [
       // The terms agreement is rendered as a <button> with the full terms text
-      // as its accessible name. This role-based locator was confirmed in the
-      // live walkthrough and is the most reliable selector.
+      // as its accessible name. Role-based locator is the most reliable selector.
       page.getByRole('button', { name: /i agree to ezra/i }),
       // Fallback: class-based selectors for the checkbox-style button.
       page.locator('button.checkbox').first(),

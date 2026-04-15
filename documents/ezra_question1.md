@@ -1,6 +1,6 @@
 <div align="center">
 
-[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Question 2 | Privacy and Security →](ezra_question2.md)
+[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Question 2 | Privacy and Security →](ezra_question2.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Automation →](../README.md#automation--playwright-test-suite)
 
 </div>
 
@@ -439,6 +439,6 @@ This ranks third because double-charging a user is one of the most damaging outc
 ---
 <div align="center">
 
-[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Question 2 | Privacy and Security →](ezra_question2.md)
+[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Question 2 | Privacy and Security →](ezra_question2.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Automation →](../README.md#automation--playwright-test-suite)
 
 </div>

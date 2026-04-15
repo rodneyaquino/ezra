@@ -1,6 +1,6 @@
 <div align="center">
 
-[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [← Question 1 | Booking Flow Test Cases](ezra_question1.md)
+[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [← Question 1 | Booking Flow Test Cases](ezra_question1.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Automation →](../README.md#automation--playwright-test-suite)
 
 </div>
 
@@ -455,6 +455,6 @@ That gives Ezra a practical way to improve security quality across a large API s
 ----
 <div align="center">
 
-[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [← Question 1 | Booking Flow Test Cases](ezra_question1.md)
+[← Back to README](../README.md) &nbsp;&nbsp;|&nbsp;&nbsp; [← Question 1 | Booking Flow Test Cases](ezra_question1.md) &nbsp;&nbsp;|&nbsp;&nbsp; [Automation →](../README.md#automation--playwright-test-suite)
 
 </div>
